@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+  background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+}
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+        header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+article {
+  flex-basis: 73%;
+}
+figure {
+  margin: 3rem 0 0 0;
+  flex-basis: 25%;
+  background-color: #59331d;
+  border-radius: 10px;
+}
+figure img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+figcaption {
+  color: #f2f2f2;
+  padding: 0.5rem;
+}
+.button {
+  display: inline-block;
+  background-color: #59331D;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  border: 3px solid #59331d;
+}
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            max-width: 300px;
+            background-color: #f9f9f9;
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product-details {
+            padding: 1rem;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #e67e22;
+            margin: 0.5rem 0;
+        }
+
+        .product-description {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #e67e22;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+  color: #f2f2f2;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #f2f2f2;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+    </style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <header>
+        <nav>
+          <ul>
+            <li class="logo"><a href="index.html"><img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast. Click for home." /></a></li>
+            <li><a href="about.html"><span aria-hidden="true" class="fa-solid fa-mug-saucer"></span> About</a></li>
+            <li><a href="products.html"><span aria-hidden="true" class="fa-solid fa-fire-flame-curved"></span> Products</a></li>
+            <li><a href="about.html"><span aria-hidden="true" class="fa-solid fa-phone"></span> Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-item">
+                <img src="https://assets.codepen.io/6306176/gulp-coffee-beans.jpg" alt="Product 1">
+                <div class="product-details">
+                    <h2 class="product-title">Coffee Grounds</h2>
+                    <p class="product-price">$9.99</p>
+                    <p class="product-description">Try our locally sourced coffee grounds.</p>
+                    <a href="products.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Product 2">
+                <div class="product-details">
+                    <h2 class="product-title">Coffee Filter</h2>
+                    <p class="product-price">$7.99</p>
+                    <p class="product-description">Try our pre-folded coffee filters today.</p>
+                    <a href="products.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="https://assets.codepen.io/6306176/gulp-drinking-coffee.jpg" alt="Product 3">
+                <div class="product-details">
+                    <h2 class="product-title">Coffee Mug</h2>
+                    <p class="product-price">$15.99</p>
+                    <p class="product-description">Hand crafted coffee mug.</p>
+                    <a href="products.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gulp Roast. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Lato, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #082B59;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 2;
+        }
+
+        h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+/* make images flexible */
+img {
+  max-width: 100%;
+}
+a {
+  color: #59331d;
+}
+a:hover {
+  text-decoration: none;
+}
+
+        header {
+  border-bottom: 10px solid #d98555;
+}
+/* navbar styling */
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 1.3rem;
+}
+/* max width on the image in pixels */
+nav .logo img {
+  max-width: 150px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: #d98555;
+}
+.main-bkgd {
+  background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+  padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+        .hero {
+            background: url('https://assets.codepen.io/6306176/gulp-coffee-beans.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #d98555;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
+            padding: 0 1rem;
+        }
+
+        .feature-item {
+            max-width: 300px;
+            text-align: center;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+  background-color: #082B59;
+  text-align: center;
+  border-top: 10px solid #d98555;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer a {
+  color: #082B59;
+  font-size: 2rem;
+  display: block;
+  margin: 0 1rem 3rem 1rem;
+}
+    </style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+<header>
+  <nav>
+    <ul>
+      <li class="logo"><a href="index.html"><img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast. Click for home." /></a></li>
+      <li><a href="about.html"><span aria-hidden="true" class="fa-solid fa-mug-saucer"></span> About</a></li>
+      <li><a href="products.html"><span aria-hidden="true" class="fa-solid fa-fire-flame-curved"></span> Products</a></li>
+      <li><a href="about.html"><span aria-hidden="true" class="fa-solid fa-phone"></span> Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <div class="hero">
+        <h1>Welcome to our Website</h1>
+        <p>Discover all the wonderful flavors Gulp Roast has to offer.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <h2>Locally Sourced Coffee</h2>
+            <p>Serving up Coffee in the San Francisco area since 2000.</p>
+        </div>
+
+        <div class="feature-item">
+            <h2>Only Quality Cofee Served</h2>
+            <p>Coffee right from coffee farms near you.</p>
+        </div>
+
+        <div class="feature-item">
+            <h2>The most delicious Blends</h2>
+            <p>The most flavorful full bodied flavors we could get our hands on.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gulp Roast Coffee. All rights reserved.</p>
+        <ul>
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <span aria-hidden="true" class="fa-brands fa-facebook-square"></span>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <span aria-hidden="true" class="fa-brands fa-twitter-square"></span>
+              <span class="sr-only">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <span aria-hidden="true" class="fa-brands fa-instagram-square"></span>
+              <span class="sr-only">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+</body>
+</html>
